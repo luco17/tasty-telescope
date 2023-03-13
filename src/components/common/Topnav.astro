@@ -1,0 +1,31 @@
+---
+interface Link {
+  href: string;
+  text: string;
+}
+
+const links: Link[] = [
+  {
+    href: "/",
+    text: "Home",
+  },
+  {
+    href: "/about/",
+    text: "About",
+  },
+  {
+    href: "/blog/",
+    text: "Blog",
+  },
+];
+---
+
+<nav class="space-x-2 px-4 py-2">
+  {
+    links.map((link) => (
+      <a class="text-md font-semibold" href={link.href}>
+        {link.text}
+      </a>
+    ))
+  }
+</nav>
