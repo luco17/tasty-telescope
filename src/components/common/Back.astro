@@ -1,0 +1,11 @@
+---
+import BackIcon from "../svgs/BackIcon.astro";
+---
+
+<button
+  onclick="{window.history.back()}"
+  class="alert flex flex-row items-center space-x-1 px-2 py-1 bg-purple-200 rounded-md shadow-butty transform hover:scale-105 transition-all duration-75 ease-in-out"
+>
+  <BackIcon />
+  <p class="text-sm font-semibold text-purple-800">Back</p>
+</button>

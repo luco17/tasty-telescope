@@ -1,0 +1,14 @@
+---
+const { url } = Astro.props;
+const { title } = Astro.props;
+---
+
+<li
+  class="shadow border-stone-200 flex-1 bg-stone-100 hover:bg-stone-200 cursor-pointer m-2 rounded group"
+>
+  <a
+    href={url}
+    class="p-4 font-semibold block h-full w-full group-hover:text-blue-700"
+    >{title}</a
+  >
+</li>
