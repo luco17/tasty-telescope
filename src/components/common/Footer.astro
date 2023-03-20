@@ -2,9 +2,20 @@
 import Social from "./Social.astro";
 const platform = "Instagram";
 const handle = "@faswimtraining";
+import Greeting from "../hero/Greeting";
 const url = "https://www.instagram.com/faswimtraining/";
+
+const quotes = [
+  "I only fear not trying",
+  "Be a yardstick of quality. Some people aren’t used to an environment where excellence is expected",
+  "The price of excellence is discipline. The cost of mediocrity is disappointment",
+  "The harder you work, the harder it is to surrender",
+  "If it’s important to you, you will find a way. If not, you will find an excuse",
+  "We are what we repeatedly do. Excellence, then, is not an act, but a habit",
+];
 ---
 
-<footer>
+<footer class="my-4 space-y-2">
   <Social platform={platform} handle={handle} url={url} />
+  <Greeting messages={quotes} />
 </footer>
