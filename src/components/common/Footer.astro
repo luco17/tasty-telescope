@@ -2,7 +2,6 @@
 import Social from "./Social.astro";
 const platform = "Instagram";
 const handle = "@faswimtraining";
-import Greeting from "../hero/Greeting";
 const url = "https://www.instagram.com/faswimtraining/";
 
 const quotes = [
@@ -17,5 +16,4 @@ const quotes = [
 
 <footer class="my-4 space-y-2">
   <Social platform={platform} handle={handle} url={url} />
-  <Greeting messages={quotes} />
 </footer>

@@ -6,8 +6,27 @@ const pageTitle = "About me";
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<BaseLayout pageTitle="About me">
-  <h1 class="text-2xl font-bold text-cyan-500">{pageTitle}</h1>
-  <h2>... and my new Astro site</h2>
-  <p>I am working on this tutorial</p>
-</BaseLayout>
+<div class="relative w-[1200px] h-[2000px]">
+  <div class="absolute inset-0 overflow-hidden">
+    <svg
+      viewBox="0 0 1440 320"
+      xmlns="http://www.w3.org/2000/svg"
+      class="wave-background"
+    >
+      <path
+        fill="#4F46E5"
+        fill-opacity="1"
+        d="M0,128L34.3,138.7C68.6,149,137,171,206,165.3C274.3,160,343,128,411,106.7C480,85,549,75,617,96C685.7,117,754,171,823,197.3C891.4,224,960,224,1029,218.7C1097.1,213,1166,203,1234,192C1302.9,181,1371,171,1406,165.3L1440,160L1440,320L1406.7,320C1373.3,320,1307,320,1239,320C1170.9,320,1102,320,1034,320C965.7,320,897,320,829,320C760,320,691,320,623,320C554.3,320,486,320,417,320C348.6,320,280,320,211,320C142.9,320,74,320,40,320L0,320Z"
+      ></path>
+    </svg>
+  </div>
+  <div class="relative z-10">
+    <!-- Your page content here -->
+    <h1 class="text-4xl font-bold">Welcome to my webpage!</h1>
+    <p class="">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at vestibulum
+      ipsum. Aenean eget nunc pharetra, laoreet velit et, mollis nibh. Etiam vel
+      purus dolor.
+    </p>
+  </div>
+</div>
