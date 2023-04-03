@@ -2,9 +2,43 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
-      boxShadow: {
-        butty: "0 6px #d8b4fe",
-        buttyhover: "0 4px #d8b4fe",
+      colors: {
+        primary: {
+          50: "#E0FCFF",
+          400: "#38BEC9",
+          500: "#2CB1BC",
+          700: "#0E7C86",
+          800: "#0A6C74",
+          900: "#044E54",
+        },
+        neutral: {
+          50: "#FAF9F7",
+          100: "#E8E6E1",
+          200: "#D3CEC4",
+          700: "#504A40",
+          900: "#27241D",
+        },
+        accent: {
+          yellow: {
+            50: "#FFFAEB",
+            400: "#F7D070",
+            800: "#7C5E10",
+            900: "#513C06",
+          },
+          red: {
+            50: "#FFEEEE",
+            500: "#BA2525",
+          },
+          blue: {
+            50: "#DCEEFB",
+            500: "#2680C2",
+          },
+          teal: {
+            50: "#EFFCF6",
+            400: "#3EBD93",
+            500: "#27AB83",
+          },
+        },
       },
     },
   },

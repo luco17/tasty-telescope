@@ -1,0 +1,36 @@
+---
+import Point from "./Point.astro";
+import Fact from "../svgs/Fact.astro";
+import Waves from "../svgs/Waves.astro";
+import Bolt from "../svgs/Bolt.astro";
+---
+
+<div class="bg-primary-800 pb-4 sm:pb-16 px-12 space-y-4">
+  <div class="">
+    <h2 class="text-yellow-50 text-center text-2xl sm:text-4xl font-bold">
+      Our philosophy
+    </h2>
+  </div>
+  <div
+    class="bg-yellow-50 grid sm:grid-cols-3 max-w-4xl mx-auto p-8 rounded-lg space-y-4 sm:space-y-0"
+  >
+    <Point
+      headline="Build confidence"
+      body="Our goal is to help you gain confidence and love swimming"
+    >
+      <Fact />
+    </Point>
+    <Point
+      headline="Goals"
+      body="We emphasize positivity, mindfulness, and celebrating small victories."
+    >
+      <Bolt />
+    </Point>
+    <Point
+      headline="Positive environment"
+      body="We aim to create a supportive and enjoyable environment to develop a lifelong love for swimming."
+    >
+      <Waves />
+    </Point>
+  </div>
+</div>
