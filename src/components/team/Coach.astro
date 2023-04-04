@@ -1,4 +1,11 @@
 ---
+interface Props {
+  profilePic: ImageMetadata;
+  name: string;
+  summary: string;
+  accolades: string[];
+}
+
 import { Image } from "astro:assets";
 const { profilePic } = Astro.props;
 const { name } = Astro.props;
