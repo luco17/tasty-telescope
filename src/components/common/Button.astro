@@ -1,17 +1,11 @@
 ---
-const { width } = Astro.props;
+// const { "@click": click } = Astro.props;
 ---
 
 <button
+  @click="alert('Booked!')"
   class="py-3 px-6 bg-primary-400 text-white font-semibold rounded-lg hover:bg-primary-500"
-  id="maino"
+  x-data
 >
   <slot />
 </button>
-
-<script>
-  function handleClick() {
-    alert("Booked!");
-  }
-  document.getElementById("maino")!.addEventListener("click", handleClick);
-</script>

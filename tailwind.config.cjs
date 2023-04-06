@@ -2,6 +2,9 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      fontFamily: {
+        cursive: ["Caveat", "cursive"],
+      },
       colors: {
         primary: {
           50: "#E0FCFF",
@@ -21,6 +24,8 @@ module.exports = {
         accent: {
           yellow: {
             50: "#FFFAEB",
+            100: "#FCEFC7",
+            200: "#F8E3A3",
             400: "#F7D070",
             800: "#7C5E10",
             900: "#513C06",
@@ -37,6 +42,8 @@ module.exports = {
             50: "#EFFCF6",
             400: "#3EBD93",
             500: "#27AB83",
+            700: "#147D64",
+            900: "#014D40",
           },
         },
       },

@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  src: ImageMetadata;
+  alt: string;
+  col_span?: string;
+  row_span?: string;
+}
+
+const {
+  src,
+  alt,
+  col_span = "col-span-1",
+  row_span = "row-span-1",
+} = Astro.props;
+---
+
+<figure class={`${col_span} ${row_span}`}>
+  <Image class="object-cover h-full w-full md:rounded-lg" src={src} alt={alt} />
+</figure>

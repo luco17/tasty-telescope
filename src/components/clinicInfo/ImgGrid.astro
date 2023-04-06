@@ -1,0 +1,44 @@
+---
+import fya1 from "../../assets/fhoriz.jpeg";
+import fya2 from "../../assets/freyaRest.jpeg";
+import fya3 from "../../assets/freyaSwimming.webp";
+import fya4 from "../../assets/fyateach.jpeg";
+import hh1 from "../../assets/hh.jpeg";
+import hh2 from "../../assets/hhuw.jpeg";
+import hh3 from "../../assets/hhmedal.jpeg";
+import jp1 from "../../assets/japet.jpeg";
+import jp2 from "../../assets/jpet2.jpeg";
+import mp from "../../assets/marcusPool.jpg";
+
+import GridFigure from "./GridFigure.astro";
+---
+
+<div class="flex justify-center">
+  <div
+    class="grid grid-cols-4 gap-1 grid-rows-3 rounded-lg bg-accent-yellow-900 p-1"
+  >
+    <!-- row 1 -->
+
+    <GridFigure
+      src={hh1}
+      alt="Holly, Freya in the pool"
+      row_span="row-span-2"
+      col_span="col-span-2"
+    />
+
+    <GridFigure
+      src={fya1}
+      alt="x"
+      row_span="row-span-1"
+      col_span="col-span-2"
+    />
+
+    <!-- row 2 -->
+    <GridFigure src={hh3} alt="z" />
+    <GridFigure src={jp1} alt="y" />
+    <!-- row 3 -->
+    <GridFigure src={fya4} alt="d" col_span="col-span-2" />
+    <GridFigure src={jp2} alt="r" />
+    <GridFigure src={mp} alt="p" />
+  </div>
+</div>

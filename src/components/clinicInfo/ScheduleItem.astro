@@ -1,0 +1,13 @@
+---
+interface Props {
+  title: string;
+  items: string[];
+}
+
+const { title, items } = Astro.props;
+---
+
+<div>
+  <h5 class="list text-3xl text-teal-700 font-bold font-cursive">{title}</h5>
+  {items.map((item) => <p class="list-item pl-2 list-inside">{item}</p>)}
+</div>

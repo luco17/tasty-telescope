@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/alpinejs": "^0.2.1",
     "@astrojs/tailwind": "^3.0.1",
+    "@fontsource/caveat": "^4.5.10",
     "@types/alpinejs": "^3.0.0",
     "alpinejs": "^3.0.0",
     "astro": "^2.1.9",
