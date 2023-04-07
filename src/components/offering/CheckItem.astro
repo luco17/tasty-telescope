@@ -1,0 +1,13 @@
+---
+import Check from "../svgs/Check.astro";
+interface Props {
+  item: string;
+}
+
+const { item } = Astro.props;
+---
+
+<li class="flex items-center space-x-1">
+  <Check />
+  <p class="font-medium text-neutral-800">{item}</p>
+</li>
